@@ -20,7 +20,7 @@ function FixedLogo() {
 }
 
 function ScrollAnima() {
-    let windowCenter = (window.innerHeight / 1.8) + window.scrollY;
+    let windowCenter = (window.innerHeight / 1.5) + window.scrollY;
     let animaElements = document.querySelectorAll('.title,.menu,.blog__top,.item-blog,.header__main,.header__body,.fan__flex,.improve__img,.improve__text,.improve__sub-title,.partner,.perfect__items,.perfect__body,.selected__item,.skills,.thilk__body,.talk');
     for (el of animaElements) {
         if (windowCenter > el.offsetTop) {
