@@ -1,0 +1,60 @@
+.fan {
+    margin-top: clamp(rem(50), 11vw, rem(134));
+    /* .fan__container */
+
+    &__container {}
+
+    /* .fan__title */
+
+    &__title {
+        text-align: center;
+    }
+
+    /* .fan__flex */
+
+    &__flex {
+        display: flex;
+        margin-top: rem(56);
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: rem(30);
+        @include scroll(0.3s, 20, 0);
+    }
+
+    /* .fan__item */
+
+    &__item {
+        flex: 0 1 rem(140);
+        margin-left: rem(60);
+        position: relative;
+    }
+
+    &__icon {
+        position: absolute;
+        left: rem(-60);
+        top: 0;
+        width: rem(60);
+        height: rem(60);
+    }
+
+    /* .fan__item-title */
+
+    &__item-title {
+        font-size: rem(53);
+        font-weight: 700;
+        line-height: 94%;
+        text-transform: uppercase;
+    }
+
+    /* .fan__item-text */
+
+    &__item-text {
+        color: $colorGray;
+    }
+}
+
+@media (max-width:rem(998)) {
+    .fan__flex {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,54 @@
+.talk {
+    background-color: $mainColor;
+    padding: rem(109) 0 rem(93) 0;
+    @include scroll(0s, 0, 20);
+    /* .talk__container */
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: rem(20);
+    }
+
+    /* .talk__body */
+
+    &__body {}
+
+    /* .talk__title */
+
+    &__title {
+        color: #FFF;
+        font-size: clamp(rem(32), 8vw, rem(66));
+        line-height: 141.818%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        & span {
+            font-size: clamp(rem(44), 8vw, rem(94));
+            font-weight: 700;
+            line-height: 99.574%;
+        }
+    }
+
+    /* .talk__text */
+
+    &__text {
+        color: rgba(255, 255, 255, 0.50);
+        margin-top: rem(29);
+        font-size: rem(21);
+        line-height: 120%;
+    }
+
+    /* .talk__btn */
+
+    &__btn {
+        background-color: #fff;
+        color: $mainColor;
+
+        &:hover {
+            box-shadow: 0 0 5px 2px $colorWrite;
+        }
+    }
+}

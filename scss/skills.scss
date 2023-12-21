@@ -1,0 +1,98 @@
+.skills {
+    background-color: #020A0C;
+    color: $colorWrite;
+    @include scroll(0s, 0, 40);
+    /* .skills__container */
+
+    &__container {}
+
+    /* .skills__flex */
+
+    &__flex {
+        display: flex;
+    }
+
+    /* .skills__body */
+
+    &__body {
+        flex: 0 0 50%;
+        padding: rem(90) rem(105) rem(102) 0;
+    }
+
+    /* .skills__title */
+
+    &__title {
+        margin-bottom: rem(50);
+    }
+
+    /* .skills__indicator */
+
+    &__indicator {
+        max-width: rem(423);
+        font-size: rem(15);
+        padding-top: rem(30);
+        padding-bottom: rem(10);
+        line-height: 133%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+
+    /* .skills__indicator-line */
+
+    &__indicator-line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: rem(2);
+        background-color: $colorWrite;
+    }
+
+
+    /* .skills__indicator-text */
+
+    &__indicator-text {}
+
+    /* .skills__indicator-percent */
+
+    &__indicator-percent {}
+
+    /* .skills__text */
+
+    &__text {
+        color: rgba(255, 255, 255, 0.70);
+        font-size: rem(18);
+        margin-top: rem(15);
+    }
+
+    /* .skills__img */
+
+    &__img {
+        flex: 0 1 50%;
+        position: relative;
+
+        & img {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
+@media (max-width:rem(998)) {
+    .skills__body {
+        flex: 0 0 100%;
+        padding: rem(90) 0 rem(102) 0;
+    }
+
+    .skills__img {
+        display: none;
+    }
+
+    .skills__indicator {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,99 @@
+.thilk {
+    padding: clamp(rem(20), 8vw, rem(148)) 0 clamp(rem(20), 8vw, rem(105)) 0;
+    /* .thilk__container */
+
+    &__container {
+        overflow: hidden;
+    }
+
+    /* .thilk__title */
+
+    &__title {
+        text-align: center;
+    }
+
+    &__body {
+        margin-top: clamp(rem(20), 8vw, rem(114));
+        position: relative;
+        padding-bottom: rem(50);
+        @include scroll(0.3s, 40, 0);
+    }
+
+    &__slider {}
+
+    /* .thilk__item */
+
+    &__item {
+        max-width: rem(460);
+        text-align: center;
+        padding: rem(35) rem(49);
+        border-radius: 5px;
+        border: 1px solid $mainColor;
+        opacity: 0.58;
+        white-space: normal;
+        min-height: rem(325);
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: end !important;
+    }
+
+    /* .thilk__text */
+
+    &__text {
+        font-size: rem(20);
+        line-height: 132%;
+        white-space: normal;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    /* .thilk__img */
+
+    &__img {
+        width: rem(80);
+        height: rem(80);
+        margin: rem(29) auto 0 auto;
+    }
+
+    /* .thilk__name */
+
+    &__name {
+        font-size: rem(17);
+        line-height: 117%;
+        text-transform: uppercase;
+        margin-top: rem(19);
+    }
+
+    /* .thilk__text-button */
+
+    &__text-button {
+        color: $colorGray;
+        font-size: rem(17);
+        margin-top: rem(5);
+    }
+
+    &__pagination {
+        position: absolute;
+        bottom: rem(-30);
+    }
+}
+
+.swiper-slide-active {
+    opacity: 1;
+}
+
+.swiper-pagination {
+    &-bullet {
+        border-radius: 0% !important;
+        width: rem(10) !important;
+        height: rem(10) !important;
+        background-color: #222 !important;
+        opacity: 0.4;
+    }
+
+    &-bullet-active {
+        opacity: 1 !important;
+    }
+}

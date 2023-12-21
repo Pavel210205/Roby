@@ -1,0 +1,122 @@
+.footer {
+    margin-top: clamp(rem(20), 11vw, rem(120));
+    /* .footer__top */
+
+    &__top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: rem(20);
+    }
+
+    /* .footer__logo */
+
+    &__logo {
+        flex: 0 0 rem(110);
+        height: rem(63);
+    }
+
+    /* .footer__icons */
+
+    &__icons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* .footer__icon */
+
+    &__icon {
+        padding: rem(15);
+        width: rem(45);
+        height: rem(45);
+        display: block;
+
+    }
+
+    /* .footer__main */
+
+    &__main {
+        margin-top: rem(59);
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem(20);
+        justify-content: space-between;
+
+    }
+
+    /* .footer__body */
+
+    &__body {
+        flex: 0 1 rem(210);
+    }
+
+    /* .footer__title */
+
+    &__title {
+        font-size: rem(20);
+        font-weight: 700;
+        line-height: 150%;
+        text-transform: uppercase;
+    }
+
+    /* .footer__text */
+
+    &__text {
+        max-width: rem(210);
+        color: $colorGray;
+        margin-top: rem(20);
+    }
+
+    /* .footer__btn */
+
+    &__btn {
+        border-radius: 40px;
+        width: 100%;
+        margin-top: rem(39);
+        background-color: $mainColor;
+        padding: rem(16) 0;
+        color: $colorWrite;
+    }
+
+    /* .footer__link */
+
+    &__link {
+        margin-top: rem(20);
+    }
+
+    /* .footer__list */
+
+    &__list {
+        & a {
+            display: block;
+            line-height: 127%;
+            color: $mainColor;
+        }
+    }
+
+    /* .footer__bottom */
+
+    &__bottom {
+        margin: rem(29) 0;
+        color: $colorGray;
+        font-size: rem(17);
+        line-height: 130%;
+    }
+}
+
+@media (max-width:rem(700)) {
+    .footer__body {
+        flex: 0 1 100%;
+    }
+
+    .footer__link {
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem(20);
+    }
+
+    .footer__text {
+        max-width: 100%;
+    }
+}

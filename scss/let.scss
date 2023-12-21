@@ -1,0 +1,37 @@
+// TO REM
+@function rem($value) {
+    $remValue: (
+        $value / 16)+rem;
+    @return $remValue;
+}
+
+// TO EM
+@function em($value) {
+    $emValue: (
+        $value / 16)+em;
+    @return $emValue;
+}
+
+/*-----------------------ПЕРЕМЕННЫЕ-----------------------------------------------------------*/
+$mainColor: #000;
+$colorWrite: #FFF;
+$colorGray: #747474;
+$container: rem(1230
+);
+$fz: rem(19);
+$ff: "Roboto";
+
+/*-----------------------миксины-----------------------------------------------------------*/
+@mixin scroll($time, $scrollX, $scrollY) {
+    transition: all 0.3s ease $time;
+    opacity: 0;
+    transform: translate(rem($scrollX), rem($scrollY));
+
+    &.scroll-anima {
+        transition: all 0.5s $time linear;
+        opacity: 1;
+        transform: translate(rem(0), rem(0));
+    }
+}
+
+//@include scroll()
